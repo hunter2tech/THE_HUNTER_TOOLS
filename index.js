@@ -78,7 +78,7 @@ const ensureFiles = require('./utils/downloadFiles');
 (async () => {
   await ensureFiles();   // <-- télécharge les fichiers si absents
   bot.launch(() => console.log('🤖 ʟᴇ ʙᴏᴛ ʟᴇ ᴘʟᴜs ᴄᴏᴏʟ ᴅᴜ ᴍᴏɴᴅᴇ ᴇsᴛ ʟᴀɴᴄᴇ́ ᴇᴛ ᴇɴ ʟɪɢɴᴇ ᴘʀᴇ̂ᴛ ᴀ ʀᴇᴄᴇᴠᴏɪʀ ᴠᴏs ᴄᴏᴍᴍᴀɴᴅᴇs !'));
-}();
+});
 
 // Graceful shutdown
 process.once('SIGINT', () => bot.stop('SIGINT'));
