@@ -69,7 +69,6 @@ const seedShop = require('./database/seed.js');
   const statsCount = db.prepare('SELECT COUNT(*) as count FROM admin_stats').get().count;
   if (statsCount === 0) {
     db.prepare('INSERT INTO admin_stats (id) VALUES (1)').run();
-  }
 };
 
 seedShop();
